@@ -113,12 +113,6 @@ tamago/
 
 ---
 
-## 📝 User Feedback Report
-
-User test report: [feedback-report.pdf](./feedback-report.pdf)
-
----
-
 ## 👩‍💻 Developer
 
 **Ceren Azar**
