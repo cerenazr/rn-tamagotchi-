@@ -1,104 +1,104 @@
 # ★ TAMAGO ★
 
-> Pixel sanat tarzında bir sanal evcil hayvan bakım oyunu. Kedini besle, oynat, dinlendir ve mutlu et!
+> A pixel art virtual pet care game. Feed, play with, rest, and keep your cat happy!
 
 ---
 
-## 📱 Proje Amacı
+## 📱 Project Purpose
 
-TAMAGO, React Native ve Expo ile geliştirilmiş çocuk dostu bir Tamagotchi oyunudur. Oyuncu; açlık, mutluluk ve enerji barlarını dengeleyerek sanal kedisine bakar. Oyun, klasik Tamagotchi mekaniklerine modern oyunlaştırma dinamikleri ekler.
+TAMAGO is a child-friendly Tamagotchi game built with React Native and Expo. The player takes care of a virtual cat by balancing hunger, happiness, and energy bars. The game adds modern gamification dynamics to classic Tamagotchi mechanics.
 
 ---
 
-## 🎮 Oyunlaştırma Özellikleri
+## 🎮 Gamification Features
 
-| Özellik | Açıklama |
+| Feature | Description |
 |---|---|
-| **XP & Seviye Sistemi** | Her besleme, aktivite ve mini-oyun XP kazandırır; 100 XP'de seviye atlanır |
-| **Coin Sistemi** | Aktiviteler ve mini-oyunlar 🪙 coin kazandırır |
-| **Pixel Sprite Sistemi** | Kedinin durumuna göre 5 farklı sprite: normal, mutlu, aç, uyku, sıkılmış |
-| **Dinamik Stat Barları** | Tokluk / Mutluluk / Enerji — renk eşiğe göre yeşil/sarı/kırmızı değişir |
-| **Düşünce Baloncuğu** | Kedi durumunu bildirir; tıklanabilir ve ilgili ekrana yönlendirir |
-| **Idle Animasyonu** | Kedi ruh haline göre hızlı/yavaş zıplar |
-| **Oyun Tiki** | Her 3 saniyede mutluluk -2, tokluk -1 azalır |
-| **Dinlenme Mekaniği** | Dinlenmede enerji saniyede +2 dolar; otomatik uyanış |
-| **Aktiviteler (5 adet)** | Oyun Oyna, Top At, Raket Sal, Bowling, Kitap Oku |
-| **Yemek Dolabı (6 yiyecek)** | Patates, Burger, Pizza, Pancake, Tost, Kruvasan |
-| **Mini-Oyunlar (3 adet)** | Balık Yakala 🐟 · Simon Söyledi 🎨 · Hızlı Matematik ➕ |
-| **Rozetler / Achievements** | 6 farklı rozet kilidi açılabilir |
-| **NEŞELENDİR Butonu** | Mutluluk < 30 olunca OYNA butonu değişir |
+| **XP & Level System** | Every feeding, activity, and mini-game earns XP; level up at 100 XP |
+| **Coin System** | Activities and mini-games earn 🪙 coins |
+| **Pixel Sprite System** | 5 different sprites based on cat's mood: normal, happy, hungry, sleep, bored |
+| **Dynamic Stat Bars** | Hunger / Happiness / Energy — color changes green/yellow/red based on threshold |
+| **Thought Bubble** | Cat reports its status; tappable and navigates to the relevant screen |
+| **Idle Animation** | Cat bounces fast/slow based on its mood |
+| **Game Tick** | Every 3 seconds happiness -2, hunger -1 |
+| **Rest Mechanic** | Energy fills +2 per second while resting; automatic wake-up |
+| **Activities (5)** | Play Game, Kick Ball, Swing Racket, Bowling, Read Book |
+| **Food Cabinet (6 foods)** | Potato, Burger, Pizza, Pancake, Toast, Croissant |
+| **Mini-Games (3)** | Catch Fish 🐟 · Simon Says 🎨 · Quick Math ➕ |
+| **Badges / Achievements** | 6 unlockable badges |
+| **CHEER UP Button** | PLAY button changes when happiness < 30 |
 
-### 🏆 Rozetler
+### 🏆 Achievements
 
-| Rozet | Koşul |
+| Badge | Condition |
 |---|---|
-| 🍗 İlk Adım | İlk kez besleme yap |
-| 🎉 Mutlu Son | Mutluluğu 100'e ulaştır |
-| ⚡ Enerjik! | Enerjini tamamen doldur |
-| 🐟 Balık Avcısı | Balık Yakala'da 5+ balık yakala |
-| 🎨 Simon Ustası | Simon'da 5. seviyeye ulaş |
-| 🧮 Matematik Dahisi | Hızlı Matematik'ten 5/5 al |
+| 🍗 First Step | Feed for the first time |
+| 🎉 Happy Ending | Reach 100 happiness |
+| ⚡ Energized! | Fully restore energy |
+| 🐟 Fish Hunter | Catch 5+ fish in Catch Fish |
+| 🎨 Simon Master | Reach level 5 in Simon Says |
+| 🧮 Math Genius | Score 5/5 in Quick Math |
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 - **React Native** (Expo SDK 54)
-- **Expo Font** — VT323 pixel yazı tipi
+- **Expo Font** — VT323 pixel font
 - `useState`, `useRef`, `useEffect`, `useCallback`
-- `Animated` API — idle kedi animasyonu
-- Tek dosya mimarisi (`App.js`)
+- `Animated` API — idle cat animation
+- Single-file architecture (`App.js`)
 
 ---
 
-## 🚀 Nasıl Çalıştırılır?
+## 🚀 How to Run
 
-### Gereksinimler
+### Requirements
 
 - [Node.js](https://nodejs.org/) (v18+)
-- [Expo Go](https://expo.dev/go) uygulaması (iOS veya Android)
+- [Expo Go](https://expo.dev/go) app (iOS or Android)
 
-### Kurulum
+### Setup
 
 ```bash
-# 1. Repoyu klonla
-git clone https://github.com/KULLANICI_ADIN/tamago.git
-cd tamago
+# 1. Clone the repo
+git clone https://github.com/cerenazr/rn-tamagotchi-.git
+cd rn-tamagotchi-
 
-# 2. Bağımlılıkları yükle
+# 2. Install dependencies
 npm install
 
-# 3. Expo font paketlerini yükle (ilk kurulumda)
+# 3. Install Expo font packages (first time only)
 npx expo install @expo-google-fonts/vt323 expo-font
 
-# 4. Uygulamayı başlat
+# 4. Start the app
 npx expo start
 ```
 
-Terminalde çıkan QR kodu telefonunuzdaki **Expo Go** uygulamasıyla tarayın.
+Scan the QR code in the terminal with the **Expo Go** app on your phone.
 
 ---
 
-## 📦 APK İndirme
+## 📦 APK Download
 
 **[⬇️ TAMAGO-v1.0.apk](https://github.com/cerenazr/rn-tamagotchi-/releases)**
 
-> Android cihazlara doğrudan yüklenebilir. Bilinmeyen kaynaklara izin vermeniz gerekebilir.
+> Can be installed directly on Android devices. You may need to allow unknown sources.
 
 ---
 
-## 🎥 Tanıtım Videosu
+## 🎥 Demo Video
 
-**[▶️ YouTube'da İzle](https://youtube.com/shorts/WvKhYWzQiUA?feature=share)**
+**[▶️ Watch on YouTube](https://youtube.com/shorts/WvKhYWzQiUA?feature=share)**
 
 ---
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 tamago/
-├── App.js                  # Tüm uygulama kodu
-├── app.json                # Expo konfigürasyonu
+├── App.js                  # All application code
+├── app.json                # Expo configuration
 └── assets/
     ├── cat/
     │   ├── cat_normal.png
@@ -106,22 +106,22 @@ tamago/
     │   ├── cat_hungry.png
     │   ├── cat_sleep.png
     │   ├── cat_bored.png
-    │   ├── activities/     # 5 aktivite görseli
-    │   └── food/           # 6 yiyecek görseli
+    │   ├── activities/     # 5 activity images
+    │   └── food/           # 6 food images
     └── ...
 ```
 
 ---
 
-## 📝 Kullanıcı Geri Bildirim Raporu
+## 📝 User Feedback Report
 
-Kullanıcı test raporu için: [feedback-report.pdf](./feedback-report.pdf)
+User test report: [feedback-report.pdf](./feedback-report.pdf)
 
 ---
 
-## 👩‍💻 Geliştirici
+## 👩‍💻 Developer
 
-Geliştirici adı ve iletişim bilgileri buraya.
+**Ceren Azar**
 
 ---
 
