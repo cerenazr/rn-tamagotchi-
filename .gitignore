@@ -39,3 +39,4 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+TAMAGO-v1.0.apk
