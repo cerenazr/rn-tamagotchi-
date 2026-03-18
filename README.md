@@ -81,7 +81,7 @@ Terminalde çıkan QR kodu telefonunuzdaki **Expo Go** uygulamasıyla tarayın.
 
 ## 📦 APK İndirme
 
-**[⬇️ TAMAGO-v1.0.apk](./TAMAGO-v1.0.apk)**
+**[⬇️ TAMAGO-v1.0.apk](https://github.com/cerenazr/rn-tamagotchi-/releases)**
 
 > Android cihazlara doğrudan yüklenebilir. Bilinmeyen kaynaklara izin vermeniz gerekebilir.
 
@@ -89,7 +89,7 @@ Terminalde çıkan QR kodu telefonunuzdaki **Expo Go** uygulamasıyla tarayın.
 
 ## 🎥 Tanıtım Videosu
 
-**[▶️ YouTube'da İzle](https://www.youtube.com/watch?v=LINK_BURAYA)**
+**[▶️ YouTube'da İzle](https://youtube.com/shorts/WvKhYWzQiUA?feature=share)**
 
 ---
 
